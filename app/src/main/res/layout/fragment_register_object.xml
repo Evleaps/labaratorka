@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.RegisterObjectFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/register_object_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <ScrollView
+        android:id="@+id/register_object_scroll"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/register_object_data_container"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="34dp"
+            android:paddingRight="34dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register_object_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:text="Введите данные"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:id="@+id/register_object_fio_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="ФИО"/>
+
+            <!--<EditText
+                android:id="@+id/register_object_second_name_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Фамилия"/>-->
+
+            <EditText
+                android:id="@+id/register_object_city_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Город"/>
+
+            <!--<EditText
+                android:id="@+id/register_object_company_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Обслуживающая компания"/>-->
+
+            <EditText
+                android:id="@+id/register_object_adress_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Адрес"/>
+
+            <!--<EditText
+                android:id="@+id/register_object_home_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Дом"/>
+
+            <EditText
+                android:id="@+id/register_object_flat_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Квартира"/>
+
+            <EditText
+                android:id="@+id/register_object_account_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:hint="Номер лицевого счета"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/register_object_btn_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="48dp"
+        android:paddingLeft="34dp"
+        android:paddingRight="34dp">
+
+        <RelativeLayout
+            android:id="@+id/register_object_user_agree_container"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <CheckBox
+                android:id="@+id/register_object_user_agree_checkbox"
+                android:layout_height="55dp"
+                android:layout_width="55dp"/>
+
+            <TextView
+                android:id="@+id/register_object_user_agree_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/register_object_user_agree_checkbox"
+                android:text="@string/user_agreement"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/register_object_btn"
+                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/register_object_user_agree_text"
+                android:layout_marginTop="12dp"
+                android:text="Добавить"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

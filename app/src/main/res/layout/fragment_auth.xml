@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.moydom.ru.myhouse.screens.AuthFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/auth_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <ImageView
+        android:id="@+id/auth_logo"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:src="@drawable/icon_logo"/>
+
+    <ImageView
+        android:id="@+id/auth_logo_desc"
+        android:layout_height="80dp"
+        android:layout_width="225dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Контроль услуг ЖКХ всегда под рукой"
+        android:src="@drawable/start_app_logo_and_slogan"/>
+
+    <LinearLayout
+        android:id="@+id/auth_body_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/auth_login_edit"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:hint="Номер телефона или e-mail"
+            style="@style/MyBtnStyleWhite"/>
+
+        <EditText
+            android:id="@+id/auth_password_edit"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:hint="Пароль"
+            style="@style/MyBtnStyleWhite"/>
+
+        <Button
+            android:id="@+id/auth_enter_btn"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Войти"
+            style="@style/MyBtnStyleBlue"/>
+
+        <TextView
+            android:id="@+id/auth_reestablish_password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_grey"
+            android:text="Восстановить пароль"/>
+
+    </LinearLayout>
+
+</LinearLayout>

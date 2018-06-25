@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.CountersFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/counters_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:layout="@layout/fragment_header_menu" />
+
+    <LinearLayout
+        android:id="@+id/counters_wrapper"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/counters_wrapper_row1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/counters_cold_water_btn"
+                android:layout_height="106dp"
+                android:layout_width="118dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/counters_cold_head"
+                android:layout_height="wrap_content"
+                android:layout_width="118dp"
+                android:layout_below="@id/counters_cold_water_btn"
+                android:layout_alignParentLeft="true"
+                android:text="Холодная\nвода"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/counters_hot_water_btn"
+                android:layout_height="106dp"
+                android:layout_width="118dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/counters_hot_head"
+                android:layout_height="wrap_content"
+                android:layout_width="118dp"
+                android:layout_below="@id/counters_hot_water_btn"
+                android:layout_alignParentRight="true"
+                android:text="Горячая\nвода"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/counters_wrapper_row2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/counters_gas_btn"
+                android:layout_height="106dp"
+                android:layout_width="118dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/counters_gas_head"
+                android:layout_height="wrap_content"
+                android:layout_width="118dp"
+                android:layout_below="@id/counters_gas_btn"
+                android:layout_alignParentLeft="true"
+                android:text="Газ"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/counters_heating_btn"
+                android:layout_height="106dp"
+                android:layout_width="118dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/counters_heating_head"
+                android:layout_height="wrap_content"
+                android:layout_width="118dp"
+                android:layout_below="@id/counters_heating_btn"
+                android:layout_alignParentRight="true"
+                android:text="Отопление"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/counters_wrapper_row3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/counters_power_btn"
+                android:layout_height="106dp"
+                android:layout_width="118dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/counters_power_head"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/counters_power_btn"
+                android:layout_centerHorizontal="true"
+                android:text="Электроэнергия"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

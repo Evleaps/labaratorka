@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.moydom.ru.myhouse.screens.ReestablishPassFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/reestab_pass_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/reestab_pass_logo"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Лого"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/reestab_pass_logo_desc"
+        android:layout_height="80dp"
+        android:layout_width="225dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Контроль услуг ЖКХ всегда под рукой"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/reestab_pass_body_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/reestab_pass_login_edit"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:textAlignment="center"
+            android:hint="Логин"/>
+
+        <Button
+            android:id="@+id/reestab_pass_enter_btn"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:text="Восстановить"/>
+
+    </LinearLayout>
+
+</LinearLayout>

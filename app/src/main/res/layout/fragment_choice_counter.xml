@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.ChoiceCounterFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/choice_counter_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:layout="@layout/fragment_header_menu" />
+
+    <TextView
+        android:id="@+id/choice_counter_desc"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="43dp"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:text="Выберите счетчик"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:id="@+id/choice_counter_wrapper"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/choice_counter_row1"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/choice_counter_row1_icon"
+                android:layout_height="38dp"
+                android:layout_width="38dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:id="@+id/choice_counter_row1_desc"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textAllCaps="true"
+                android:text="Счетчик 1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choice_counter_row2"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="9dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/choice_counter_row2_icon"
+                android:layout_height="38dp"
+                android:layout_width="38dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:id="@+id/choice_counter_row2_desc"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textAllCaps="true"
+                android:text="Счетчик 2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choice_counter_row3"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="9dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/choice_counter_row3_icon"
+                android:layout_height="38dp"
+                android:layout_width="38dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:id="@+id/choice_counter_row3_desc"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textAllCaps="true"
+                android:text="Счетчик 3"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choice_counter_row4"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="9dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/choice_counter_row4_icon"
+                android:layout_height="38dp"
+                android:layout_width="38dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:id="@+id/choice_counter_row4_desc"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textAllCaps="true"
+                android:text="Счетчик 4"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

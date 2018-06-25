@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"/>
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="myapp.moydom.ru.myhouse.screens.MenuFragment"
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:layout_gravity="start" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.CounterInfoFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/counter_info_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:layout="@layout/fragment_header_menu" />
+
+    <ScrollView
+        android:id="@+id/counter_info_scroll_wrapper"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+            <LinearLayout
+                android:id="@+id/counter_info_content_container"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/counter_info_desc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:text="Счетчик 1"
+                    android:textAllCaps="true"/>
+
+                <LinearLayout
+                    android:id="@+id/counter_info_wrapper"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="26dp"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row1"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_num_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Номер счетчика"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:id="@+id/counter_info_num"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="7777777"
+                            android:background="@color/grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row2"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_make_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Марка"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:id="@+id/counter_info_make"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Азамат"
+                            android:background="@color/grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row3"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_model_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Модель счетчика"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:id="@+id/counter_info_model"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Азамат 4331"
+                            android:background="@color/grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_data_check_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Дата следующей поверки"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:id="@+id/counter_info_data_check"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="04.06.2018"
+                            android:background="@color/grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_last_reading_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Последние\nпереданные показания"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:id="@+id/counter_info_last_reading"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="36"
+                            android:background="@color/grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row6"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_data_reading_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Дата передачи показаний"
+                            android:background="@color/grey"/>
+
+                        <TextView
+                            android:id="@+id/counter_info_data_reading"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="09.05.2018"
+                            android:background="@color/grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row7"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_now_reading_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Текущие показания"
+                            android:background="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/counter_info_now_reading_edit"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:text="Введите значение"
+                            android:background="@color/light_grey"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/counter_info_row8"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counter_info_consumption_head"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:text="Расход"
+                            android:background="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/counter_info_consumption_edit"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:text="Введите значение"
+                            android:background="@color/light_grey"/>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/counter_info_send_btn"
+                        android:layout_height="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/light_grey"
+                        android:text="Отправить"/>
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

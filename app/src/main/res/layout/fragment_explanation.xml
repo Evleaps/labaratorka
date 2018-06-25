@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.ExplanationFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/explan_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:layout="@layout/fragment_header_menu" />
+
+    <ScrollView
+        android:id="@+id/explan_body_scroll"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/explan_body_wrapper"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/explan_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="21dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:text="Начисления за июнь 2018"
+                android:textAllCaps="true"/>
+
+            <LinearLayout
+                android:id="@+id/explan_list_wrapper"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/explan_row1"
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="19dp"
+                    android:background="@color/light_grey">
+
+                    <ImageView
+                        android:id="@+id/explan_row1_icon"
+                        android:layout_height="35dp"
+                        android:layout_width="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/explan_row1_desc"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@id/explan_row1_icon"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="Холодная вода"/>
+
+                    <TextView
+                        android:id="@+id/explan_row1_sum"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:text="2000 Р"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/explan_row2"
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/light_grey">
+
+                    <ImageView
+                        android:id="@+id/explan_row2_icon"
+                        android:layout_height="35dp"
+                        android:layout_width="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/explan_row2_desc"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@id/explan_row2_icon"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="Горячая вода"/>
+
+                    <TextView
+                        android:id="@+id/explan_row2_sum"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:text="2000 Р"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/explan_row3"
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/light_grey">
+
+                    <ImageView
+                        android:id="@+id/explan_row3_icon"
+                        android:layout_height="35dp"
+                        android:layout_width="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/explan_row3_desc"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@id/explan_row3_icon"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="Отопление"/>
+
+                    <TextView
+                        android:id="@+id/explan_row3_sum"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:text="3000 Р"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/explan_footer_wrapper"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/explan_footer_container"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/explan_all_sum_desc"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
+                            android:textAlignment="center"
+                            android:textSize="14dp"
+                            android:text="Сумма начислений за июнь 2018"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/explan_all_sum_text"
+                            android:layout_height="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@color/black"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:text="10000 Р"/>
+
+                        <Button
+                            android:id="@+id/explan_pay_btn"
+                            android:layout_height="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Оплатить"/>
+
+                        <LinearLayout
+                            android:id="@+id/explan_footer_blocks"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:paddingTop="30dp"
+                            android:paddingBottom="45dp"
+                            android:background="@color/black"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/explan_debt_block"
+                                android:layout_height="70dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@color/grey"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/explan_debt_block_icon"
+                                    android:layout_height="20dp"
+                                    android:layout_width="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginRight="7dp"
+                                    android:background="@color/white"/>
+
+                                <TextView
+                                    android:id="@+id/explan_debt_block_head"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Задолженность"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="true"/>
+
+                                <TextView
+                                    android:id="@+id/explan_debt_block_sum"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_below="@id/explan_debt_block_head"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="1000 Р"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="true"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/explan_pay_block"
+                                android:layout_height="70dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@color/grey"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/explan_pay_block_icon"
+                                    android:layout_height="20dp"
+                                    android:layout_width="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginRight="7dp"
+                                    android:background="@color/white"/>
+
+                                <TextView
+                                    android:id="@+id/explan_pay_block_head"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Оплачено"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="true"/>
+
+                                <TextView
+                                    android:id="@+id/explan_pay_block_sum"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_below="@id/explan_pay_block_head"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="1000 Р"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="true"/>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

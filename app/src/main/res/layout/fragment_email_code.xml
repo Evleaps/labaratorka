@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.EmailCodeFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/email_code_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:layout="@layout/fragment_header_menu" />
+
+    <TextView
+        android:id="@+id/email_code_image"
+        android:layout_height="131dp"
+        android:layout_width="104dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Щит"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/email_code_desc"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Тут текст"
+        android:textColor="@color/text_grey"
+        android:textSize="14dp"/>
+
+    <LinearLayout
+        android:id="@+id/email_code_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_code_edit"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:textAlignment="center"
+            android:hint="Код"/>
+
+        <TextView
+            android:id="@+id/email_code_time"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:text="120 секунд"
+            android:textColor="@color/text_grey"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/email_code_enter_btn"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:text="Подтвердить"/>
+
+        <TextView
+            android:id="@+id/email_code_send_again"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:text="Отправить повторно"
+            android:textColor="@color/text_grey"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+</LinearLayout>

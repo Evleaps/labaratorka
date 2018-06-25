@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".screens.HeaderMenuFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp"
+        android:background="@color/appColorPrimary">
+        <ImageView
+            android:id="@+id/header_menu"
+            android:layout_height="22dp"
+            android:layout_width="28dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_icon"/>
+
+        <ImageView
+            android:id="@+id/header_logo"
+            android:layout_height="32dp"
+            android:layout_width="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:src="@drawable/app_logo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_destination_container"
+        android:layout_height="36dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/header_back_btn"
+            android:layout_height="26dp"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/go_back_icon"/>
+
+
+        <TextView
+            android:id="@+id/header_destination"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/header_back_btn"
+            android:layout_marginLeft="19dp"
+            android:layout_centerVertical="true"
+            android:text="Текущее расположение"
+            android:textSize="14dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/appSeparatorColor"/>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.moydom.ru.myhouse.screens.LearnSecondFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/learn_second_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:layout="@layout/fragment_header_menu" />
+
+    <LinearLayout
+        android:id="@+id/learn_second_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="52dp"
+        android:paddingRight="52dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/learn_second_desc1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            style="@style/MyTextStyle"
+            android:text="@string/learn_second_desc1"
+            android:textStyle="bold"
+            android:textColor="@color/appTextColor"
+            />
+        <TextView
+            android:id="@+id/learn_second_desc2"
+            android:layout_height="wrap_content"
+            android:layout_width="260dp"
+            android:textColor="@color/appTextColor"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:text="@string/learn_second_desc2"
+            />
+
+        <RelativeLayout
+            android:id="@+id/learn_second_row1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/learn_second_row1_icon"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="@drawable/num1"/>
+
+            <TextView
+                android:id="@+id/learn_second_row1_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/learn_second_row1_icon"
+                android:textColor="@color/appTextColor"
+                android:textSize="14dp"
+                android:text="начисления по услугам"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/learn_second_row2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/learn_second_row2_icon"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="@drawable/num2"/>
+
+            <TextView
+                android:id="@+id/learn_second_row2_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/learn_second_row2_icon"
+                android:textColor="@color/appTextColor"
+                android:textSize="14dp"
+                android:text="показания приборов учета"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/learn_second_row3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/learn_second_row3_icon"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="@drawable/num3"/>
+
+            <TextView
+                android:id="@+id/learn_second_row3_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/learn_second_row3_icon"
+                android:textColor="@color/appTextColor"
+                android:textSize="14dp"
+                android:text="историю начислений"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/learn_second_row4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/learn_second_row4_icon"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="@drawable/num4"/>
+
+            <TextView
+                android:id="@+id/learn_second_row4_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/learn_second_row4_icon"
+                android:textColor="@color/appTextColor"
+                android:textSize="14dp"
+                android:text="историю оплат"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/learn_second_row5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/learn_second_row5_icon"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:background="@drawable/num5"/>
+
+            <TextView
+                android:id="@+id/learn_second_row5_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/learn_second_row5_icon"
+                android:textColor="@color/appTextColor"
+                android:textSize="14dp"
+                android:text="смотреть характеристики квартиры и дома"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/learn_second_next"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/MyBtnStyleOrange"
+            android:layout_marginTop="40dp"
+            android:text="Дальше"
+            />
+
+        <ImageView
+            android:id="@+id/learn_second_drops"
+            android:layout_height="34dp"
+            android:layout_width="100dp"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/pagination_icon_2"/>
+    </LinearLayout>
+
+
+</LinearLayout>

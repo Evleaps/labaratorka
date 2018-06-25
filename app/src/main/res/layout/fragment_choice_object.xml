@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.moydom.ru.myhouse.screens.ChoiceObjectFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/object_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/object_container"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/object_desc"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:text="Выберите объект управления"
+            android:textAllCaps="true"/>
+
+        <LinearLayout
+                android:id="@+id/object_list_container"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/object_row1"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey">
+
+                    <ImageView
+                        android:id="@+id/object_row1_icon"
+                        android:layout_height="35dp"
+                        android:layout_width="35dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/object_row1_desc"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@id/object_row1_icon"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="ул. Тверская, дом 1, кв. 10"/>
+
+                    <TextView
+                        android:id="@+id/object_row1_wait_text"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/object_row1_desc"
+                        android:layout_marginLeft="24dp"
+                        android:layout_toRightOf="@id/object_row1_icon"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:text="Ждет подтверждения"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/object_row2"
+                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/light_grey">
+
+                <ImageView
+                    android:id="@+id/object_row2_icon"
+                    android:layout_height="35dp"
+                    android:layout_width="35dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/object_row2_desc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/object_row2_icon"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="ул. Тверская, дом 1, кв. 11"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/object_row3"
+                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:background="@color/light_grey">
+
+                <ImageView
+                    android:id="@+id/object_row3_icon"
+                    android:layout_height="35dp"
+                    android:layout_width="35dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/object_row3_desc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@id/object_row3_icon"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:text="ул. Тверская, дом 1, кв. 12"/>
+
+                <TextView
+                    android:id="@+id/object_row3_wait_text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/object_row3_desc"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@id/object_row3_icon"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:text="Ждет подтверждения"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/object_add_btn_container"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/object_add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="36dp"
+                android:text="Добавить объект"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

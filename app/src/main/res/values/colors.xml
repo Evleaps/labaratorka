@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="grey">#555</color>
+    <color name="text_grey">#85837f</color>
+    <color name="light_grey">#ccc</color>
+    <color name="white">#fff</color>
+
+
+    <!--Цвета заказчика-->
+    <color name="appColorPrimary">#0058b6</color>
+    <color name="appColorOrange1">#fdae01</color>
+    <color name="appColorOrange2">#fd6e01</color>
+    <color name="appTextColor">#5d554f</color>
+    <color name="appSeparatorColor">#dddddd</color>
+</resources>

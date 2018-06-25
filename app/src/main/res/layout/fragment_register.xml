@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.moydom.ru.myhouse.screens.RegisterFragment"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/register_header"
+        android:name="myapp.moydom.ru.myhouse.screens.HeaderMenuFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <ScrollView
+        android:id="@+id/register_scroll"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="34dp"
+        android:paddingRight="34dp"
+        android:layout_below="@id/register_header"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/register_data_container"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textColor="@color/appTextColor"
+                android:text="Введите данные"
+                android:textAllCaps="true"/>
+
+            <EditText
+                android:id="@+id/register_fio_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@mipmap/full_name_icon"
+                android:textSize="14dp"
+                android:hint="Ваше ФИО"
+                android:paddingLeft="10dp"
+                android:drawablePadding="20dp"
+                style="@style/MyBtnStyleWhite"/>
+
+            <EditText
+                android:id="@+id/register_number_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@mipmap/cellfhone_icon"
+                android:textSize="14dp"
+                android:hint="Номер телефона"
+                android:paddingLeft="10dp"
+                android:drawablePadding="20dp"
+                style="@style/MyBtnStyleWhite"/>
+
+            <EditText
+                android:id="@+id/register_email_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@mipmap/email_icon"
+                android:textSize="14dp"
+                android:hint="E-mail"
+                style="@style/MyBtnStyleWhite"/>
+
+            <EditText
+                android:id="@+id/register_password_edit"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@mipmap/password_icon"
+                android:textSize="14dp"
+                android:hint="Пароль"
+                android:paddingLeft="10dp"
+                android:drawablePadding="20dp"
+                style="@style/MyBtnStyleWhite"/>
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp"
+        android:text="Зарегистрироваться"
+        style="@style/MyBtnStyleBlue"/>
+
+</RelativeLayout>
